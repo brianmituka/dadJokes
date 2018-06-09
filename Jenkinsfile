@@ -5,6 +5,11 @@ pipeline {
             steps {
                 sh 'npm run build'
             }
+        },
+        stage('deploy'){
+          steps {
+            sh 'npm run deploy'
+          }
         }
     }
 }
